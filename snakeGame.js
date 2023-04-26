@@ -11,6 +11,7 @@ let dx = 10;
 let dy = 0;
 let food = { x: Math.floor(Math.random() * 40) * 10, y: Math.floor(Math.random() * 40) * 10 };
 let score = 0;
+let highScore = localStorage.getItem('highScore') || 0;
 
 
 playButton.addEventListener('click', function () {

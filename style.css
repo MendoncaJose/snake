@@ -68,6 +68,10 @@ body {
     font-size: 10px;
     margin-bottom: 20px;
 }
+#menu h6 {
+    font-size: 6px;
+    margin-bottom: 20px;
+}
 
 #play-button {
     background-color: #4CAF50;
