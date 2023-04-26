@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <title>Snake Game</title>
+</head>
+
+<body>
+
+    <div class="nokia3310">
+        <div class="screen"></div>
+        <div id="menu">
+            <h2>Snake Game</h2>
+            <img src="" alt="">
+            <h3>Rules</h3>
+            <p>Eat the food to grow your snake. Don't run into the walls or your own body!</p>
+            <h3>Controls</h3>
+            <p>Use the arrow keys to move the snake.</p>
+            <button id="play-button">Play</button>
+        </div>
+        <canvas id="gameCanvas" width="400" height="400" style="display: none;"></canvas>
+        <!-- The modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <h2>Game Over</h2>
+                <p>Your score is: <span id="score"></span></p>
+                <button id="restartButton">Restart</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="snakeGame.js"></script>
+</body>
+
+</html>

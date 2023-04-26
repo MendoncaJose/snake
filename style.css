@@ -1,0 +1,177 @@
+/* Import the custom font */
+@font-face {
+    font-family: 'PressStart2P-Regular';
+    src: url('pressstart2p-regular-webfont.woff2') format('woff2'),
+        url('pressstart2p-regular-webfont.woff') format('woff');
+}
+
+/* Set the font for the whole page to the custom font */
+body {
+    font-family: 'PressStart2P-Regular', cursive;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Nokia 3310 */
+.nokia3310 {
+    width: 390px;
+    height: 580px;
+    background: #222;
+    border: 10px solid #666;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Screen */
+.screen {
+    width: 300px;
+    height: 300px;
+    background: #ccc;
+    border: 10px solid #000;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Style the menu */
+#menu {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 260px;
+    width: 260px;
+    background-color: #d3d3d3;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+#menu h2 {
+    color: #4CAF50;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+#menu h3 {
+    color:grey;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+#menu p {
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+#play-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'PressStart2P-Regular';
+}
+
+#play-button {
+    transition: background-color 0.3s ease;
+    /* Other CSS properties */
+  }
+  
+  #play-button:hover {
+    background-color: #3e8e41;
+  }
+
+/* Set the background to mimic the Nokia 3310's screen */
+#gameCanvas {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #d3d3d3;
+    border: 3px solid black;
+    margin: 0 auto;
+    display: block;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Style the modal to mimic the Nokia 3310's pop-up messages */
+#myModal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
+
+/* Style the modal content to mimic the Nokia 3310's pop-up messages */
+.modal-content {
+    background-color:  #d3d3d3;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+}
+.modal-content h2 {
+    color: red;
+}
+.modal-content p {
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+/* Style the restart button to mimic the Nokia 3310's buttons */
+#restartButton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'PressStart2P-Regular';
+}
+
+#restartButton:hover {
+    background-color: #3e8e41;
+}
+
+/* Styling for the snake */
+.snake {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: green;
+    box-shadow: inset 0 0 3px 3px darkgreen;
+}
+
+/* Styling for the food */
+.food {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    box-shadow: 0 0 5px 2px darkred;
+}
